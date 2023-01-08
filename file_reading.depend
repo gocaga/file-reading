@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1666704085 source:c:\users\gabriel\desktop\learning_c_2022\working folder\datatypes\file_reading\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+
