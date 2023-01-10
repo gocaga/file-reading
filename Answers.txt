@@ -1,0 +1,12 @@
+These are the answers to the Questions text file:
+1. Are you there (y/n)?
+y
+2. Are you a human (y/n)?
+n
+3. Are you under the age of thirty (y/n)?
+y
+4. Have you ever smoked (y/n)?
+n
+5. Do you ever spill the tea (y/n)?
+y
+6. Have you ever committed a violent felony (y/n)?y
