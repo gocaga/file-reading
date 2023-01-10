@@ -37,34 +37,16 @@ int main()
 
     printf("%s", question[0]);
 
-    printf("%s", question[1]);
-    answer[1] = getchar();
-    getchar();
+    for (int i = 1; i < 7; i++)
+    {
+        printf("%s", question[i]);
+        answer[i] = getchar();
+        getchar();
 
-    printf("%s", question[2]);
-    answer[2] = getchar();
-    getchar();
-
-    printf("%s", question[3]);
-    answer[3] = getchar();
-    getchar();
-    printf("%s", question[4]);
-    answer[4] = getchar();
-    getchar();
-
-    printf("%s", question[5]);
-    answer[5] = getchar();
-    getchar();
-
-    printf("%s", question[6]);
-    answer[6] = getchar();
-    getchar();
-
+    }
 
     /* close when done */
     fclose(fin);
-
-
 
     /* write the contents to a new text file */
     fout = fopen("Answers.txt", "w");
@@ -83,13 +65,12 @@ int main()
     int iterator = 0;
     for (int i = 1; i < 7; i++ )
     {
-        fprintf(fout, "%s%c", question[(iterator+1)], answer[i] );
+        fprintf(fout, "%s%c", question[(i)], answer[i] );
 
         fputc('\n', fout);
 
-        iterator++;
+        //iterator++;
     }
-
 
     fclose(fout);
 
